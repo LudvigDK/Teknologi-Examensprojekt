@@ -406,6 +406,7 @@ svg {
     overflow-x: auto;
     padding-bottom: 4px;
     scrollbar-width: none;
+    min-width: 100%;
     /* hide scrollbar — scroll by touch */
 }
 
@@ -423,6 +424,7 @@ svg {
     color: var(--text-secondary);
     backdrop-filter: var(--surface-blur);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    min-width: fit-content;
     transition:
         background var(--transition-normal),
         color var(--transition-normal),
