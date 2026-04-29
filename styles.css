@@ -51,6 +51,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    position: absolute;
     font-family: var(--font);
     background: var(--bg);
     overflow: hidden;
@@ -60,7 +61,10 @@ body {
     /* prevent browser pull-to-refresh on kiosk */
 }
 body {
-    transform: rotate(180deg);
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%; /* 100 / 0.8 */
+    height: 125%;
 }
 
 button {
